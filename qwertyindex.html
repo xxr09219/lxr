@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🔮 你的神秘礼物 🔮</title>
+    <style>
+        body { text-align: center; padding: 50px; font-family: 'Arial'; background: #f0f0f0; }
+        .gift-box { 
+            width: 200px; height: 200px; background: #e74c3c; margin: 30px auto; 
+            border-radius: 10px; box-shadow: 0 10px 0 #c0392b; cursor: pointer;
+            transition: 0.1s ease;
+        }
+        .gift-box:active { transform: translateY(10px); box-shadow: 0 0 0 #c0392b; }
+        .hidden-link { display: none; margin-top: 30px; }
+        .open { display: block !important; }
+        button { padding: 15px 30px; font-size: 16px; background: #2ecc71; border: none; color: white; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>✨ 这里有一份给你的惊喜 ✨</h1>
+    <p>点击下面的礼物盒，看看里面是什么 👇</p >
+    <div class="gift-box" onclick="document.getElementById('reveal').classList.add('open')"></div>
+
+    <div id="reveal" class="hidden-link">
+        <h2>🎉 就是它啦！ 🎉</h2>
+        <!-- 在这里放入您的京东礼物链接 -->
+        <a href=" " target="_blank">
+            <button>点我领取礼物</button>
+        </a >
+        <p style="margin-top:20px;">(24小时内有效哦~)</p >
+    </div>
+</body>
+</html>
